@@ -1,0 +1,323 @@
+ body {
+      font: 400 15px Raleway, sans-serif;
+      line-height: 1.8;
+      color: #000;
+     position: relative;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  } 
+
+input[type="submit"]{
+     
+    background-color: #CAFF70;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px 20px;
+    border: none;    
+}
+
+.buttonDiv a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.buttonDiv p:last-child{
+    color: green;
+}
+
+#mainLogo{
+   float: left;
+    width: 15%;
+  }
+
+.IdIcons{
+    width: 40px;
+    float: right;
+    margin-top: -70px;
+}
+
+.jumbotron a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.jumbotron h1{
+    text-align: center;
+    margin-right: 400px;
+    color:#75188A;
+    text-shadow: 2px 2px #A1CC59;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 800px;
+    max-width: 90%;
+     text-shadow: 1px 1px 3px black; 
+}
+  
+
+
+
+.jumbotron p{
+    text-align: center;
+    margin-right: 10px;
+    font-family: "Pacifico", cursive;
+    margin-bottom: auto; 
+}
+
+  .jumbotron {
+        position: relative;
+        background-color: #b5e564; 
+        color: #000;
+        padding: 120px 25px;
+        font-family: 'Baloo Bhaina', cursive;
+        background-image: url('../img/header_img.jpeg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:bottom right;
+        font-size: 40px;
+        max-height: 300px;
+        min-height: 300px;
+       
+  }
+#about-image{
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+
+#mission-image{
+    width: 100%;
+}
+
+.indent {
+    text-indent:50px;
+}
+
+#president-image{
+    float: left;
+    width: 20%;
+    height: 50%;
+    padding: 0 20px 0 10px;
+}
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #caff70 ;
+      font-size: 50px;
+  }
+  .logo {
+      color: #caff70 ;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #caff70 ;
+  }
+  .carousel-indicators li {
+      border-color: #caff70 ;
+  }
+  .carousel-indicators li.active {
+      background-color: #caff70 ;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+      background-color: #a1cc59;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #000 !important;
+  }
+    
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #caff70;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;  
+      animation-duration: 1s; 
+      -webkit-animation-duration: 1s;
+      visibility: visible;      
+  }
+
+#about{
+    padding-top: 0;
+}
+
+#loginModal,#rgstrModal {
+    padding-top: 40px;
+}
+
+.modal-header{
+    background-color:#caff70;
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit
+}
+
+.class2{
+    cursor: pointer;
+}
+
+#slides_control {
+   width:80%;
+   align:center;
+   margin-left:10%;
+   margin-right:10%;
+}
+img{
+  margin:auto;
+  width: 100%;
+}
+#slideImage {
+  width: 75%;
+}
+
+.footer-color{
+    background-color: dimgrey;
+    color: #fff;
+}
+
+#facebooklink{
+    text-decoration: none;
+    color: white;
+}
+
+#contact{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.flickrwrap {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
+.flickrwrap iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    } 
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+   #president-image{
+
+        float: left;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 0 10px;
+    }
+      .jumbotron{
+          padding-top: 50px;
+            font-size: 20px;
+            width: 100%;
+      }
+      #about-image{
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+  }
+  @media screen and (max-width: 480px) {
+        .logo {
+            font-size: 150px;
+        }
+        #president-image{
+            float: left;
+            width: 100%;
+            height: 100%;
+            padding: 0 20px 0 10px;
+        }
+        #about-image{
+            float: right;
+            width: 100%;
+            height: 100%;
+        }
+        .jumbotron h1{
+            padding-top: 50px;
+            font-size: 20px;
+            width: 100%;
+            
+        }
+          .jumbotron p{
+              font-size: 20px;
+              padding: 0;
+              margin: 0;
+              text-align: right;
+          }
+      .navbar{
+          padding-bottom: 10px;
+      }
+  }

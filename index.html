@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cnypModule"  manifest="manifest.appcache">
+<head>
+    
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Chotanagpur Youth Pune</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="public/libs/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="public/libs/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="public/libs/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+    <script type="text/javascript" src="public/js/main.js"></script>
+     <!-- Angular -->
+    <script type="text/javascript"  src="public/libs/angular/angular.js"></script>
+    <script type="text/javascript"  src="public/libs/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript"  src="public/libs/angular-cookies/angular-cookies.js"></script>
+    <script type="text/javascript" src="public/js/cnypModule.js"></script>
+    <script type="text/javascript" src="public/js/loginController.js"></script>
+    <script type="text/javascript" src="public/js/profileController.js"></script>
+    <script type="text/javascript" src="public/js/loginService.js"></script>
+    <script type="text/javascript" src="public/js/registerController.js"></script>
+    <script type="text/javascript" src="public/js/registerService.js"></script>
+    <script type="text/javascript" src="public/js/homeController.js"></script>
+    <script type="text/javascript" src="public/js/mainController.js"></script>
+	<script type="text/javascript" src="public/js/logoutController.js"></script>
+    <script type="text/javascript" src="public/js/sendMailController.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Baloo+Bhaina" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <!---<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">--->
+    <link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lobster|Pacifico" rel="stylesheet">
+     <style>
+        .error-message {
+          color: red;
+        }
+        input.ng-dirty.ng-invalid {
+          border-color: red;
+        }
+    </style>
+</head>
+<body id="home" data-spy="scroll" data-target="#myNavbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+
+          </button>
+          <a class="navbar-brand class1" ui-sref="#home">Chotanagpur Youth Pune</a>
+         
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="class1"  ui-sref="#about"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>ABOUT</a></li>
+            <li><a class="class1"  ui-sref="#events"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>EVENTS</a></li>
+            <li><a class="class1"  ui-sref="#gallery"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>GALLERY</a></li>
+             <li><a class="class1"  ui-sref="#video"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>VIDEOS</a></li>  
+            <li><a class="class1"  ui-sref="#contact"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>CONTACT</a></li>
+          
+            <!-- Commented for now 
+              <li ng-hide="globals.currentUser.loginStatus">    
+                <a class="class2" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>LOGIN</a>
+              </li>
+              
+              
+              <li ng-hide="globals.currentUser.loginStatus">    
+                <a class="class2" data-toggle="modal" data-target="#rgstrModal"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>REGISTER</a>
+              </li>
+
+              <li ng-show="globals.currentUser.loginStatus">
+                 <a class="class2" ui-sref="profile"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>PROFILE</a>  
+              </li>  
+
+              <li ng-show="globals.currentUser.loginStatus">
+                <a class="class2" ui-sref="#logout" ng-click="logout()"><span class="glyphicon glyphicon-log-in"></span>LOGOUT</a>
+              </li>
+            -->
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="jumbotron text-center">
+        
+          <a class="IdIcons" href="#" title="Coming Soon">
+                <img src="public/icons/1483744956_Social_networks_Twitter.png">
+          </a> 
+        
+          <a class="IdIcons" href="https://plus.google.com/u/0/112233757927793987315" target="_blank">
+                <img src="public/icons/1483744959_Social_networks_Google_Plus.png">
+          </a>
+        
+          <a class="IdIcons" href="https://www.flickr.com/photos/148471514@N04/30454607716/" target="_blank">
+                <img src="public/icons/1483752277_Social_networks_Flickr.png">
+          </a>
+           
+          <a class="IdIcons" href="https://www.youtube.com/channel/UCsaImTWspr9c3yjjzSr1Fqw" target="_blank">
+                <img src="public/icons/1483744902_Social_networks_Youtube.png"> 
+          </a> 
+        
+          <a class="IdIcons" href="https://www.facebook.com/groups/1206378209379510/" target="_blank">
+                <img  src="public/icons/1483744829_Social_networks_Facebook.png"> 
+          </a>
+         
+        <h1> <img id="mainLogo" src="public/img/logo_old.jpg">Chotanagpur Youth Pune <p>...a helping hand</p>  </h1>
+        
+    </div>
+    
+    
+      
+    
+
+    <div ui-view></div>
+    
+    <footer class="container-fluid text-center footer-color">
+      <p>&copy; ChotaNagpur Youth Pune (2015)</p>
+    </footer>
+  </body>
+</html>
